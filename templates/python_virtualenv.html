@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Virtual Environments</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f4f6f8;
+            padding: 50px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #28a745;
+        }
+
+        code {
+            background: #f1f1f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        .btn-back {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #6c757d;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .btn-back:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚙️ Python Virtual Environments</h1>
+        <p>
+            Virtual environments allow you to create isolated Python environments for different projects. This prevents dependency conflicts and keeps your system Python clean.
+        </p>
+
+        <h2>🔹 Creating a Virtual Environment</h2>
+        <pre><code>python3 -m venv myenv</code></pre>
+
+        <h2>🔹 Activating the Virtual Environment</h2>
+        <pre><code>
+# Linux / Mac
+source myenv/bin/activate
+
+# Windows
+myenv\Scripts\activate
+        </code></pre>
+
+        <h2>🔹 Deactivating</h2>
+        <pre><code>deactivate</code></pre>
+
+        <h2>🔹 Installing Packages</h2>
+        <pre><code>pip install package_name</code></pre>
+
+        <h2>🔹 Why Use Virtual Environments?</h2>
+        <ul>
+            <li>Avoid conflicts between project dependencies</li>
+            <li>Test different Python versions safely</li>
+            <li>Keep your system Python clean</li>
+        </ul>
+
+        <a class="btn-back" href="/python">⬅ Back to Python Overview</a>
+        <a class="btn-back" href="/">⬅ Back to Home</a>
+    </div>
+</body>
+</html>

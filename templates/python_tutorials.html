@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Tutorials</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #f4f6f8;
+            padding: 50px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #28a745;
+        }
+        .tab {
+            display: inline-block;
+            margin-right: 15px;
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .tab:hover {
+            background: #1e7e34;
+        }
+        .btn-back {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #6c757d;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        .btn-back:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐍 Python Tutorials</h1>
+        <p>Explore Python use cases, run scripts, and learn step by step.</p>
+
+        <h2>Choose a Level:</h2>
+        {% for tab in tabs %}
+            <!-- Link to folder/level, not a specific script -->
+            <a class="tab" href="/python/tutorials/{{ tab }}">{{ tab }}</a>
+        {% endfor %}
+
+        <br><br>
+        <a class="btn-back" href="/python">⬅ Back to Python Overview</a>
+        <a class="btn-back" href="/">⬅ Back to Home</a>
+    </div>
+</body>
+</html>

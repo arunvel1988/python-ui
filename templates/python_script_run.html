@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ script_name }}</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f4f6f8; padding: 50px; color: #333; }
+        .container { max-width: 900px; margin: auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);}
+        h1 { color: #28a745; }
+        pre { background: #f1f1f1; padding: 20px; border-radius: 8px; white-space: pre-wrap; }
+        .btn-run { margin-top: 20px; padding: 12px 25px; background-color: #007bff; color: white; border: none; border-radius: 8px; cursor: pointer;}
+        .btn-run:hover { background-color: #0056b3; }
+        .btn-back { margin-top: 20px; display: inline-block; padding: 12px 25px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 8px; margin-right: 10px;}
+        .btn-back:hover { background-color: #5a6268; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Script: {{ script_name }}</h1>
+
+        <h2>Code:</h2>
+        <pre>{{ code }}</pre>
+
+        <form method="POST">
+            <button class="btn-run" type="submit">▶ Run Script</button>
+        </form>
+
+        {% if output %}
+            <h2>Output:</h2>
+            <pre>{{ output }}</pre>
+        {% endif %}
+
+        <a class="btn-back" href="/python/tutorials/{{ level }}">⬅ Back to {{ level }} Scripts</a>
+        <a class="btn-back" href="/python/tutorials">⬅ Back to Tutorials</a>
+        <a class="btn-back" href="/python">⬅ Back to Python Overview</a>
+        <a class="btn-back" href="/">⬅ Back to Home</a>
+    </div>
+</body>
+</html>

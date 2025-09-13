@@ -1,2 +1,2 @@
-# python-ui
-python-ui
+# ansible-ui
+ansible-ui
