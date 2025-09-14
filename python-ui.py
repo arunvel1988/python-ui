@@ -217,7 +217,7 @@ def view_playbook(playbook_name):
 
 @app.route("/python/tutorials")
 def python_tutorials():
-    tabs = ["Basics", "Intermediate", "Advanced", "Expert", "Flask"]
+    tabs = ["Basics", "Intermediate", "Advanced", "Expert"]
     return render_template("python_tutorials.html", tabs=tabs)
 
 # Map levels to folders
