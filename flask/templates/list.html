@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<body>
+  <h1>Products</h1>
+  <a href="{{ url_for('add_product') }}">Add new</a>
+  <ul>
+    {% for p in products %}
+      <li>{{ p.id }} - {{ p.name }} : ₹{{ p.price }}</li>
+    {% else %}
+      <li>No products yet</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

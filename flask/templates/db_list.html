@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products List</title>
+</head>
+<body>
+    <h1>Available Products</h1>
+    <a href="/products/add">➕ Add Product</a>
+    <ul>
+        {% for product in products %}
+            <li>{{ product['id'] }} - {{ product['name'] }} : ${{ product['price'] }}</li>
+        {% else %}
+            <li>No products yet!</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

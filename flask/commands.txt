@@ -1,0 +1,15 @@
+### for program 5
+curl http://127.0.0.1:5004/api/products
+
+curl -X POST -H "Content-Type: application/json" -d '{"name":"Hat","price":199}' http://127.0.0.1:5004/api/products
+
+
+
+####### for program 7
+
+
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    price DECIMAL(10,2)
+);
