@@ -1,0 +1,11 @@
+##############################
+if u want to use it locally. . then run it from same folder of setup.py
+pip install -e .
+##################################
+
+pip install build twine
+
+python3 -m build
+
+twine upload dist/*
+pip install ecomm-utils

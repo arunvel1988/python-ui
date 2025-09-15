@@ -1,0 +1,5 @@
+setup.py
+ecomm_utils.egg-info/PKG-INFO
+ecomm_utils.egg-info/SOURCES.txt
+ecomm_utils.egg-info/dependency_links.txt
+ecomm_utils.egg-info/top_level.txt
