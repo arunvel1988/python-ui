@@ -226,6 +226,7 @@ FOLDER_MAP = {
     "Intermediate": "intermediate",
     "Advanced": "advanced",
     "Expert": "expert",
+    "Network": "network",
     "Flask": "flask"
 }
 
