@@ -1,15 +1,12 @@
-# Variables
+router_name = "Core-Router-1"
+total_memory = 32
+used_memory = 18
 
-router_name = "CoreRouter1"
-ip_address = "192.168.1.1"
-port_count = 24
-cpu_usage = 67.5
-is_active = True
+available_memory = total_memory - used_memory
+memory_usage_percentage = (used_memory / total_memory) * 100
 
-# Display values
-
-print("Router Name:", router_name)
-print("IP Address:", ip_address)
-print("Ports:", port_count)
-print("CPU Usage:", cpu_usage)
-print("Router Status:", is_active)
+print("Device Name :", router_name)
+print("Total Memory :", total_memory, "GB")
+print("Used Memory :", used_memory, "GB")
+print("Available Memory :", available_memory, "GB")
+print("Memory Usage :", memory_usage_percentage, "%")
